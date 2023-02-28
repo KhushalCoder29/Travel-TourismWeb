@@ -1,0 +1,974 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.pbar{
+  height: 2px;
+  width: 1350px;
+  background-color: red;
+  animation-name: progress;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  opacity: 0;
+}
+@keyframes progress{
+  0%{
+    width: 40px;
+    opacity: 100;
+  }
+  25%{
+    width: 200px;
+    opacity: 100;
+  }
+  60%{
+    width: 800px;
+    opacity: 100;
+  }
+  100%{
+    width: 1350px;
+    opacity: 100;
+  }
+}
+.navbar ul li {
+  display: inline;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+.navbar ul li:hover {
+  color: blue;
+}
+.navbar {
+  height: 90px;
+  background-color: whitesmoke;
+}
+ul {
+  margin-left: 80px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+#more {
+  width: 77px;
+  cursor: pointer;
+  background-color: whitesmoke;
+  border: 1px solid whitesmoke;
+}
+#more:hover {
+  background-color: blue;
+  border-radius: 20px;
+  border: 1px solid blue;
+  color: whitesmoke;
+}
+#login{
+  position: relative;
+  right: -80px;
+  background-color: whitesmoke;
+  border: 1px solid blue;
+  color: blue;
+  border-radius: 20px;
+  width: 150px;
+  height: 50px;
+}
+#login:hover{
+  background-color: blue;
+  border: 1px solid blue;
+  color: whitesmoke;
+}
+#loginModal{
+  background-color: rgb(240, 229, 210);
+  height: 450px;
+  width: 300px;
+  position: absolute;
+  top: -3200px;
+  right: -1000px;
+  border-radius: 10px;
+  opacity: 0;
+
+}
+
+#emailadd{
+  position: relative;
+  top: 10px;
+  right: -85px;
+  display: flex;
+  justify-content: center;
+  width: 110px;
+  pointer-events: none; /*pointer*/
+}
+#email{
+  position: relative;
+  top: 10px;
+  right: -17px;
+  width: 270px;
+  pointer-events: none; /*pointer*/
+}
+#email:hover{
+  border: 1.8px solid blue;
+}
+#continue{
+  position: relative;
+  top: 30px;
+  right: -18px;
+  width: 270px;
+  height: 50px;
+  border: 1px solid blue;
+  color: blue;
+  border-radius: 5px;
+  pointer-events: none; /*pointer*/
+}
+#continue:hover{
+  background-color: blue;
+  color: whitesmoke;
+}
+#password{
+  position: relative;
+  top: 15px;
+  right: -105px;
+  pointer-events: none; /*pointer*/
+}
+#pass{
+  position: relative;
+  top: 10px;
+  right: -17px;
+  width: 270px;
+  pointer-events: none; /*pointer*/
+}
+#pass:hover{
+  border: 1.8px solid blue;
+}
+#dont{
+  position: relative;
+  top: 40px;
+  right: -40px;
+  pointer-events: none; /*pointer*/
+}
+#signup{
+  position: relative;
+  top: 10px;
+  right: -215px;
+  text-decoration: none;
+  color: blue;
+  pointer-events: none; /*pointer*/
+}
+#signup:hover{
+  font-size: 14px;
+}
+#line{
+  width: 100px;
+  height: 1px;
+  background-color: grey;
+  position: relative;
+  top: 40px;
+  right: -20px;
+}
+#or{
+  position: relative;
+  top: 20px;
+  right: -140px;
+  pointer-events: none; /*pointer*/
+}
+#line2{
+  width: 100px;
+  height: 1px;
+  background-color: grey;
+  position: relative;
+  right: -180px;
+  top: 2px;
+}
+#google{
+  width: 270px;
+  height: 40px;
+  font-size: 14px;
+  position: relative;
+  top: 20px;
+  right: -15px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  pointer-events: none; /*pointer*/
+}
+#microsoft{
+  width: 270px;
+  height: 40px;
+  font-size: 14px;
+  position: relative;
+  top: 30px;
+  right: -15px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  pointer-events: none; /*pointer*/
+
+}
+#img1{
+  position: relative;
+  top: -22px;
+  right: 220px;
+}
+#img2{
+  position: relative;
+  top: -5px;
+  right: -20px;
+}
+#lastl{
+  width: 150px;
+  height: 1px;
+  background-color: grey;
+  position: relative;
+  top: 30px;
+  right: -70px;
+}
+#refer{
+  font-size: 10px;
+  position: relative;
+  top: 40px;
+  right: -20px;
+  pointer-events: none; /*pointer*/
+}
+#close{
+  position: relative;
+  top: -410px;
+  right: -270px;
+  font-size: 14px;
+}
+
+#tour{
+  position: relative;
+  right: -20px;
+}
+#india{
+  position: relative;
+  right: -40px;
+}
+#help{
+  position: relative;
+  right: -120px;
+  font-size: 16px;
+  width: 110px;
+  height: 30px;
+  border: 1px solid blue;
+  color: blue;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#help:hover{
+  background-color: blue;
+  color: whitesmoke;
+}
+#helpline{
+  width: 200px;
+  height: 70px;
+  background-color: rgb(233, 233, 164);
+  border-radius: 5px;
+  position: relative;
+  top: -3730px;
+  right: -1140px;
+  opacity: 0;
+}
+#hel1{
+  position: relative;
+  right: -10px;
+  top: 5px;
+}
+#hel2{
+  position: relative;
+  top: -12px;
+  right: -30px;
+  text-decoration: none;
+
+}
+#logo{
+  width: 100px;
+  position: relative;
+  top: -85px;
+}
+#imglog{
+  border-radius: 60px;
+  margin-left: 20px;
+}
+
+#alert{
+  width: 1350px;
+  height: 50px;
+  background-color: bisque;
+  position: relative;
+  top: -600px;
+}
+#alert:hover{
+  background-color: coral;
+}
+#altxt{
+  position: relative;
+  top: 505px;
+  right: -17px;
+}
+#unsplash{
+  position: relative;
+  top: -105px;
+}
+
+.container{
+  width: 1000px;
+  height: 350px;
+  border-radius: 20px;
+  border: 2px solid lightgrey;
+  background-color: rgb(242, 235, 235);
+  position: relative;
+  top: -320px;
+}
+.inner{
+  width: 1000px;
+  height: 130px;
+  border-radius: 10px;
+  background-color: rgb(242, 235, 235);
+  border: 2px solid lightgray;
+  position: relative;
+  top: -90px;
+  right: -50px;
+}
+.desc{
+  width: 700px;
+  /* height: 50px; */
+  position: relative;
+  top: -410px;
+  right: -480px;
+  color: white;
+  font-size: 35px;
+  font-family: 'Oswald', sans-serif;
+}
+.desc2{
+  width: 830px;
+  position: relative;
+  top: -10px;
+  left: -140px;
+}
+#hotel{
+  position: relative;
+  right: -80px;
+  top: 8px;
+  cursor: pointer;
+}
+#hotel:hover{
+  box-shadow: 5px 5px 5px blue;
+  border-radius: 10px;
+}
+#flight{
+  position: relative;
+  right: -140px;
+  top: 8px;
+  cursor: pointer;
+}
+#flight:hover{
+  box-shadow: 5px 5px 5px blue;
+  border-radius: 10px;
+}
+#calender{
+  position: relative;
+  right: -200px;
+  top: 8px;
+  cursor: pointer;
+}
+#calender:hover{
+  box-shadow: 5px 5px 5px blue;
+  border-radius: 10px;
+}
+#activity{
+  position: relative;
+  right: -280px;
+  top: 8px;
+  cursor: pointer;
+}
+#activity:hover{
+  box-shadow: 5px 5px 5px blue;
+  border-radius: 10px;
+}
+#cabs{
+  position: relative;
+  right: -350px;
+  top: 8px;
+  cursor: pointer;
+}
+#cabs:hover{
+  box-shadow: 5px 5px 5px blue;
+  border-radius: 10px;
+}
+#trains{
+  position: relative;
+  right: -420px;
+  top: 8px;
+  cursor: pointer;
+}
+#trains:hover{
+  box-shadow: 5px 5px 5px blue;
+  border-radius: 10px;
+}
+#option1{
+  position: relative;
+  top: 15px;
+  right: -60px;
+}
+#option2{
+  position: relative;
+  top: -15px;
+  right: -240px;
+}
+#option3{
+  position: relative;
+  top: -39px;
+  right: -375px;
+}
+#option4{
+  position: relative;
+  top: -70px;
+  right: -540px;
+}
+#option5{
+  position: relative;
+  top: -100px;
+  right: -710px;
+}
+#option6{
+  position: relative;
+  top: -125px;
+  right: -860px;
+}
+#new{
+  background-color: red;
+  color: whitesmoke;
+  border: 1px solid red;
+  border-radius: 10px;
+  position: relative;
+  top: -262px;
+  right: -390px;
+}
+#new2{
+  background-color: red;
+  color: whitesmoke;
+  border: 1px solid red;
+  border-radius: 10px;
+  position: relative;
+  top: -262px;
+  right: -510px;
+}
+#new3{
+  background-color: red;
+  color: whitesmoke;
+  border: 1px solid red;
+  border-radius: 10px;
+  position: relative;
+  top: -262px;
+  left: 170px;
+}
+#search{
+  width: 900px;
+  height: 50px;
+  position: relative;
+  top: -60px;
+  right: -90px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+#time{
+  position: relative;
+  left: -810px;
+  width: 200px;
+}
+#arrive{
+  width: 300px;
+  height: 70px;
+  position: relative;
+  right: -90px;
+  border: 1px solid grey;
+  background-color: whitesmoke;
+}
+#arrive:hover{
+  background-color: lightslategray;
+  color: gold;
+
+}
+#arrive2{
+  width: 300px;
+  height: 70px;
+  position: relative;
+  right: -90px;
+  border: 1px solid grey;
+  background-color: whitesmoke;
+}
+#arrive2:hover{
+  background-color: lightslategray;
+  color: gold;
+}
+#adult{
+  width: 300px;
+  height: 70px;
+  position: relative;
+  right: -90px;
+  border: 1px solid grey;
+  background-color: whitesmoke;
+}
+#adult:hover{
+  background-color: lightslategray;
+  color: gold;
+
+}
+#select{
+  position: relative;
+  right: -70px;
+}
+#tues{
+  width: 60px;
+  position: relative;
+  top: -24px;
+  right: -205px;
+  color: grey;
+}
+#wed{
+  width: 80px;
+  position: relative;
+  top: -52px;
+  right: -505px;
+  color: grey;
+}
+#sear{
+  width: 400px;
+  height: 90px;
+  border: 1px solid blue;
+  background-color: blue;
+  color: whitesmoke;
+  border-radius: 10px;
+  position: relative;
+  top: -80px;
+  right: -350px;
+}
+#sear:hover{
+  background-color: lightblue;
+  color: blue;
+}
+#checkin{
+  position: relative;
+  top: -100px;
+  right: -150px;
+}
+#checkout{
+  position: relative;
+  top: -100px;
+  right: -420px;
+}
+#chk1{
+  position: relative;
+  top: -150px;
+  right: -203px;
+  font-size: 12px;
+  color: grey;
+}
+#chk2{
+  position: relative;
+  top: -175px;
+  right: -503px;
+  font-size: 12px;
+  color: grey;
+}
+#person{
+  position: relative;
+  top: -210px;
+  right: -320px;
+}
+#local{
+  position: relative;
+  top: -330px;
+  right: -430px;
+  cursor: pointer;
+}
+#local:hover{
+  transform: scale(2,2);
+  top: -340px;
+  height: 30px;
+}
+.promo{
+  width: 700px;
+  height: 200px;
+  background-color: black;
+  position: relative;
+  top: -250px;
+  right: -320px;
+  border-radius: 8px;
+}
+#vip{
+  color: whitesmoke;
+  position: relative;
+  right: -100px;
+  top: 80px;
+  font-size: 30px;
+}
+#star{
+  position: relative;
+  top: 40px;
+  right: -155px;
+}
+#vip2{
+  color: gold;
+  font-size: 30px;
+  position: relative;
+  top: 8px;
+  right: -190px;
+}
+#tick1{
+  position: relative;
+  top: -90px;
+  right: -280px;
+}
+#tick2{
+  position: relative;
+  top: -50px;
+  right: -246px;
+}
+#tick3{
+  position: relative;
+  top: -10px;
+  right: -213px;
+}
+#tck1{
+  color: whitesmoke;
+  position:relative;
+  top: -115px;
+  right: -320px;
+}
+#tck2{
+  color: whitesmoke;
+  position:relative;
+  top: -105px;
+  right: -320px;
+}
+#tck3{
+  color: whitesmoke;
+  position:relative;
+  top: -92px;
+  right: -320px;
+}
+#sign{
+  width: 150px;
+  height: 30px;
+  position: relative;
+  top: -80px;
+  right: -530px;
+  background-color: blue;
+  border: 1px solid blue;
+  color: whitesmoke;
+  border-radius: 5px;
+}
+#sign:hover{
+  background-color: rgb(71, 71, 231);
+}
+.sales{
+  width: 1330px;
+  height: 300px;
+  background-color:rgb(242, 235, 235);
+  border: 1px solid grey;
+  border-radius: 5px;
+  position: relative;
+  right: -10px;
+  top: -214px;
+  overflow: scroll;
+}
+#sale1{
+  border-radius: 10px;
+  position: relative;
+  right: -10px;
+  top: 30px;
+  cursor: pointer;
+}
+#sale2{
+  height: 250px;
+  border-radius: 10px;
+  position: relative;
+  right: -30px;
+  top: 20px;
+  cursor: pointer;
+}
+#sale3{
+  border-radius: 10px;
+  position: relative;
+  right: -40px;
+  top: 20px;
+  cursor: pointer;
+}
+#sale4{
+  border-radius: 10px;
+  position: relative;
+  right: -40px;
+  top: 40px;
+  cursor: pointer;
+}
+#sale5{
+  border-radius: 10px;
+  position: relative;
+  right: -100px;
+  top: 40px;
+  cursor: pointer;
+}
+.spot{
+  height: 250px;
+  width: 1330px;
+  position: relative;
+  top: -110px;
+  right: -10px;
+  /* background-color: ; */
+  overflow: scroll;
+}
+#hspot{
+  position: relative;
+  top: -430px;
+  right: -430px;
+  font-family: 'Phudu', cursive;
+  font-weight: 600;
+}
+.goa{
+  position: relative;
+  right: -30px;
+  top: 20px;
+  border-radius: 100px;
+}
+.delhi{
+  position: relative;
+  right: -70px;
+  top: 20px;
+  border-radius: 100px;
+}
+.mumbai{
+  position: relative;
+  right: -110px;
+  top: 20px;
+  border-radius: 100px;
+}
+.banglore{
+  position: relative;
+  right: -160px;
+  top: 20px;
+  border-radius: 100px;
+  border: 1px solid grey;
+}
+.kochi{
+  position: relative;
+  right: -210px;
+  top: 20px;
+  border-radius: 100px;
+  border: 1px solid grey;
+}
+.hyderabad{
+  position: relative;
+  right: -260px;
+  top: 20px;
+  border-radius: 100px;
+  border: 1px solid grey;
+}
+.chennai{
+  position: relative;
+  right: -1520px;
+  top: -180px;
+  border-radius: 100px;
+  border: 1px solid grey;
+}
+/* #goa1{
+  position: relative;
+  top: -830px;
+  right: -40px;
+  /* background-color: coral; */
+  /* width: 40px;
+  height: 30px; */
+  /* border-radius: 5px; */
+/* } */
+
+#vac{
+  position: relative;
+  top: 450px;
+  font-family: 'Phudu', cursive;
+  font-weight: 600;
+}
+.vacation{
+  position: relative;
+  top: -570px;
+  right: -360px;
+}
+#apt{
+  position: relative;
+  top: 470px;
+  left: -300px;
+}
+#vacren{
+  position: relative;
+  top: 470px;
+  left: -280px;
+}
+#villas{
+  position: relative;
+  top: 470px;
+  left: -260px;
+}
+#bunglows{
+  position: relative;
+  top: 470px;
+  left: -240px;
+}
+#apt1{
+  width: 150px;
+  position: relative;
+  top: -85px;
+  right: -60px;
+  font-size: 25px;
+}
+#vacren1{
+  width: 210px;
+  position: relative;
+  top: -120px;
+  right: -390px;
+  font-size: 25px;
+}
+#villas1{
+  width: 150px;
+  position: relative;
+  top: -160px;
+  right: -710px;
+  font-size: 25px;
+}
+#bunglows1{
+  width: 150px;
+  position: relative;
+  top: -200px;
+  right: -1035px;
+  font-size: 25px;
+}
+#helps{
+  position: relative;
+  top: 20px;
+  right: -120px;
+  font-size: 20px;
+}
+.about{
+  background-color: rgb(233, 235, 238);
+  height: 250px;
+  position: relative;
+  top: -100px;
+}
+.about ul li{
+  list-style: none;
+  position: relative;
+  top: 30px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+}
+.company ul li{
+  list-style: none;
+  position: relative;
+  right: -260px;
+  top: -320px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+}
+#comp{
+  position: relative;
+  top: -332px;
+  right: -360px;
+}
+.Destinations ul li{
+  list-style: none;
+  position: relative;
+  right: -460px;
+  top: -490px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+}
+#desti{
+  position: relative;
+  top: -500px;
+  right: -570px;
+}
+.partner ul li{
+  list-style: none;
+  position: relative;
+  right: -690px;
+  top: -590px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+}
+#partner{
+  position: relative;
+  top: -595px;
+  right: -800px;
+}
+.get ul li{
+  list-style: none;
+  position: relative;
+  right: -990px;
+  top: -760px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+}
+#get{
+  position: relative;
+  top: -765px;
+  right: -1090px;
+}
+.last{
+  height: 400px;
+  width: 1400px;
+  background-color: rgb(42, 42, 46);
+  position: relative;
+  top: 70px;
+}
+#rights{
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 30px;
+}
+#rights2{
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 30px;
+}
+#lastgft{
+  width: 150px;
+  border-radius: 40px;
+  position: relative;
+  right: -130px;
+  top: 90px;
+}
+#lenz{
+  width: 150px;
+  position: relative;
+  top: 90px;
+  right: -250px;
+  border-radius: 40px;
+}
+#com{
+  position: relative;
+  top: 80px;
+  right: -330px;
+  border-radius: 40px;
+}
+#ici{
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: 80px;
+  right: -400px;
+  border-radius: 40px;
+}
+#pvt{
+  color: whitesmoke;
+  float: right;
+  position: relative;
+  top: 250px;
+  left: -100px;
+}
+#coun{
+  color: whitesmoke;
+  float: right;
+  position: relative;
+  top: 270px;
+  right: -125px;
+}
